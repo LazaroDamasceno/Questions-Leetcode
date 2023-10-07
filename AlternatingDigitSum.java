@@ -9,7 +9,7 @@ class Solution {
         int[] digits = Arrays.stream(stringToArrayStrings).mapToInt(e -> Integer.parseInt(e)).toArray();
         for (int i = 0; i < digits.length; i++) {
 			if (i % 2 != 0) digits[i] = -digits[i];
-		}
+	}
         return IntStream.of(digits).sum();
     }
 }
